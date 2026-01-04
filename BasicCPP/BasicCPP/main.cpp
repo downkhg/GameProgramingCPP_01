@@ -23,14 +23,14 @@ int Div(int a, int b)
 //	printf("Add: %d\n", Add(3, 5));
 //	printf("Sub: %d\n", Sub(10, 4));
 //}
-
+//200,150
 void FunctionTestMain(int a, int b) //매개변수를 정의해서 외부에 값을 변경해서 넣을수있다.
 {
 	printf("FuctionTest!\n");
 	printf("Add: %d\n", Add(a, b));
 	printf("Sub: %d\n", Sub(a, b));
 	//나누기, 곱하기 함수도 사용하고 결과를 출력해보자.
-	printf("Div: %d\n", Div(a, b));
+	printf("Div: %d\n", Div(a, b));//1.33333333 //1?
 }
 //사용자로부터 두 숫자를 입력받아 사칙연산을 수행하는 프로그램 만들기
 void FunctionCalcultorMain()
@@ -56,6 +56,7 @@ void FunctionCalcultorMain()
 	{
 	case '+':
 		c = Add(a, b);
+		c = a + b;
 		break;
 	case '-':
 		c = Sub(a, b);
@@ -76,8 +77,6 @@ void FunctionCalcultorMain()
 //main이 없습니다.(error LNK2019: main"int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 함수에서 참조되는 확인할 수 없는 외부 기호)
 int main() //빌드 및 실행: ctrl + F5
 {	
-	FunctionTestMain(200,150); //합수호출: 함수내에 모든 기능을 실행함.
-	FunctionCalcultorMain();
 	//print function("문장")//문장 출력기능
 	//소거법: 어떤것을 제거하여 필요성을 확인하는 과정 -> 설명하는 기능이 실제로 어떤 결과를 만드는지 실행하며 확인한다.
 	printf("Hello, World!\n");//\n: 줄바꿈 문자(new line) //;(세미콜론): 문장의 끝을 나타냄.	
@@ -113,5 +112,8 @@ int main() //빌드 및 실행: ctrl + F5
 
 	c = a - b; //c라는 그릇에 a에서 b를 뺀 값을 넣어라.
 	printf("%d - %d = %d\n", a, b, c);
+
+	FunctionTestMain(200, 150); //합수호출: 함수내에 모든 기능을 실행함.
+	FunctionCalcultorMain();
 	return 0; //F9: 프레이킹포인트
 }

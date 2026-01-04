@@ -4,21 +4,35 @@
 //포함하다 //standard input output 헤더파일
 #include <string.h>
 //포함하다 //string 헤더파일
-char: 문자를 저장하는 변수형
-int: 정수를 저장하는 변수형
-ㄴ정수: 자연수. 셀수있는 수
-float: 실수를 저장하는 변수형
-ㄴ실수: 0과 1사이에 어떤 것을 타나내는 수
-double: 소숫점자리를 더 많이 표현 할 수 있음.
-struct:
-class:
-enum:
 
+변수:
+ㄴchar: 문자를 저장하는 변수형
+ㄴint: 정수를 저장하는 변수형
+ㄴㄴ정수: 자연수. 셀수있는 수
+ㄴfloat: 실수를 저장하는 변수형
+ㄴㄴ실수: 0과 1사이에 어떤 것을 타나내는 수
+ㄴdouble: 소숫점자리를 더 많이 표현 할 수 있음.
+ㄴstruct: 게임에 어떤 대상에 안에 있는 데이터를 저장할때(예: 플레이어의 스테이터스)
+ㄴclass: 게임에 어떤 캐릭터를 나타내는데 사용함(예: 플레이어, 몬스터, NPC)
+ㄴenum: 여러가지 상태를 숫자로 구별하기 어려울때 사용하여 식별을 쉽게하는 타입.
+ㄴsizeof:
+ㄴunsigned (데이터타입):
+
+반복문:
+ㄴwhile문:
+ㄴfor문:
+
+제어문:
+ㄴbreak:
+ㄴswitch:
+ㄴif~else:
 
 배열
 char배열:
 string(문자열):
 ㄴstrcpy_s: String Copy Safe: 문자열 복사
+ㄴASCII:
+ㄴ%s:
 
 //main은 무엇인가?
 error LNK2019: main"int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ): 
@@ -45,4 +59,12 @@ case문:
 
 입력(scanf):
 
+
+
 string.h:
+문자열
+
+
+함수:
+ㄴ함수의선언:
+
