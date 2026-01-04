@@ -26,7 +26,7 @@ int Div(int a, int b)
 
 void FunctionTestMain(int a, int b) //매개변수를 정의해서 외부에 값을 변경해서 넣을수있다.
 {
-	printf("FuctionTest!");
+	printf("FuctionTest!\n");
 	printf("Add: %d\n", Add(a, b));
 	printf("Sub: %d\n", Sub(a, b));
 	//나누기, 곱하기 함수도 사용하고 결과를 출력해보자.
@@ -35,6 +35,7 @@ void FunctionTestMain(int a, int b) //매개변수를 정의해서 외부에 값을 변경해서 �
 //사용자로부터 두 숫자를 입력받아 사칙연산을 수행하는 프로그램 만들기
 void FunctionCalcultorMain()
 {
+	printf("FunctionCalcultorMain\n");
 	int a = 0, b = 0 , c = 0;
 	char op = '_';
 	//scanf_s("%d %c %d", &a, &op, &b); // 10 + 20
